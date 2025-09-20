@@ -8,7 +8,7 @@ public class HashMultiMap<K, V> {
     private int size = 0; // Общее количество всех значений
 
     // Метод добавления значения для ключа
-    public void rm -rf .gitput(K key, V value) {
+    public void put(K key, V value) {
         // 1. Пытаемся получить коробку (список) для нашего ключа
         List<V> values = map.get(key);
 
