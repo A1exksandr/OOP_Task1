@@ -1,3 +1,5 @@
+package com.shurik.collections;
+
 // Этот класс описывает один элемент, хранящийся в нашей HashMap
 class Node<K, V> {
     final K key; // Ключ (например, "Брат"). final - потому что ключ не должен меняться

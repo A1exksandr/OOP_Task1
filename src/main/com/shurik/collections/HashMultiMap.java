@@ -1,3 +1,5 @@
+package com.shurik.collections;
+
 import java.util.*;
 
 public class HashMultiMap<K, V> {
