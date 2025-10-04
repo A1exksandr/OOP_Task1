@@ -1,3 +1,5 @@
+package com.shurik.collections;
+
 public class MyHashMap<K, V> {
     private Node<K, V>[] buckets; // Массив "полок" (корзин). Каждая полка - голова связного списка.
     private int capacity; // Количество "полок" (размер массива)
