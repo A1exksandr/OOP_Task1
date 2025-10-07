@@ -1,6 +1,6 @@
 # 📚 Таск 1: Реализация собственной библиотеки коллекций
 
-[![Java](https://img.shields.io/badge/Java-11%2B-orange?logo=java)](https://java.com)
+[![Java](https://img.shields.io/badge/Java-8-orange?logo=java)](https://java.com)
 [![Maven](https://img.shields.io/badge/Maven-3.6%2B-blue?logo=apache-maven)](https://maven.apache.org)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
