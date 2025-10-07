@@ -49,7 +49,6 @@ public class MyHashMap<K, V> {
         // 4. (Позже) Здесь можно добавить логику "расширения шкафа",
         // если вещей стало слишком много по сравнению с количеством полок.
     }
-
     public V get(K key) {
         int bucketIndex = getBucketIndex(key);
         Node<K, V> current = buckets[bucketIndex];
@@ -90,5 +89,26 @@ public class MyHashMap<K, V> {
             current = current.next;
         }
         return null; // Не нашли что удалять
+    }
+
+    public int size() {
+        return size;
+    }
+
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
+    public boolean containsKey(K key) {
+        int bucketIndex = getBucketIndex(key);
+        Node<K, V> current = buckets[bucketIndex];
+
+        while (current != null) {
+            if (current.key.equals(key)) {
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
     }
 }
