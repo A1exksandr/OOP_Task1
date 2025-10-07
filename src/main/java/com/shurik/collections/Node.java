@@ -7,7 +7,7 @@ class Node<K, V> {
     Node<K, V> next; // Ссылка на следующий узел в цепочке (для коллизий)
 
     // Конструктор для создания новой "вещи"
-    Node(K key, V value, Node<K, V> next) {
+    public Node(K key, V value, Node<K, V> next) {
         this.key = key;
         this.value = value;
         this.next = next;

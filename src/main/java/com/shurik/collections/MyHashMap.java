@@ -91,4 +91,25 @@ public class MyHashMap<K, V> {
         }
         return null; // Не нашли что удалять
     }
+
+    public int size() {
+        return size;
+    }
+
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
+    public boolean containsKey(K key) {
+        int bucketIndex = getBucketIndex(key);
+        Node<K, V> current = buckets[bucketIndex];
+
+        while (current != null) {
+            if (current.key.equals(key)) {
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
+    }
 }
